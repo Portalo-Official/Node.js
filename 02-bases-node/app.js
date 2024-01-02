@@ -1,7 +1,7 @@
 
-const base = 5;
-for (let i = 1; i <= 10; i++) {
-    let multiplicacion= i * 5;
-    let operacion = `${base} x ${i} = ${multiplicacion}`;
-    console.log(operacion);
-}
+const {crearArchivo} = require('./helpers/multiplicar')
+
+const [ , ,arg3 = 'base=5'] = process.argv;
+const [ , numero] = arg3.split('=');
+crearArchivo(numero).then((nombreArchivo)=> console.log(nombreArchivo, 'creado'))
+                    .catch(err => onsole.log('Ocurrio un error', err));

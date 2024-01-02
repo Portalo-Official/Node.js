@@ -1,0 +1,15 @@
+{
+  "name": "primer_proyecto",
+  "version": "1.0.0",
+  "description": "Proyecto dedicado a las bases de Node.js",
+  "main": "app.js",
+  "scripts": {
+    "test": "node app.js"
+  },
+  "author": "Santiago Miguez",
+  "license": "MIT",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "yargs": "^17.7.2"
+  }
+}
